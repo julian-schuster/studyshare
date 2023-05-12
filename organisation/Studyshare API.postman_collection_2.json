@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "fa3110a9-46b5-4221-951f-f004edc0cd84",
+		"name": "Studyshare API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/group/create?groupname=TEST&token=1111&filelimit=10&filesizelimit=20",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logintoken\n",
+							"value": "mZYiYnsp5sdP1HT6XF2WeuRYyNZDKi",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "groupname",
+							"value": "TEST1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a beschreibung",
+							"type": "text"
+						},
+						{
+							"key": "filelimit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "filesizelimit",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"create"
+					]
+				},
+				"description": "Studyshare CREATE GROUP"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/group/delete?token=1111&groupname=TEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "logintoken",
+							"value": "xOSeKF5A4KrkgBpBrE2yXu8oi1p30F",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "groupid",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"delete"
+					]
+				},
+				"description": "Studyshare DELETE GROUP"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/group/getlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logintoken",
+							"value": "5aRkdEjbtCJwUkXLWGCOWcLzBNUXrx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/getlist?logintoken=eYajbJ24etAADYKV8RHjy8CAPY0Uac&userid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"getlist"
+					],
+					"query": [
+						{
+							"key": "logintoken",
+							"value": "eYajbJ24etAADYKV8RHjy8CAPY0Uac"
+						},
+						{
+							"key": "userid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/group/join?token=1111&groupid=10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "aDagwdNiDBNDq7LKuFRlvPaO5EOjGw",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "groupid",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/join",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"join"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/group/leave?token=1111&groupid=10",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "logintoken",
+							"value": "aDagwdNiDBNDq7LKuFRlvPaO5EOjGw",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "groupid",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/leave",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"leave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/login?email=tester@hs-fulda.de&password=securepw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test.tester@informatik.hs-fulda.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securepw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logintoken",
+							"value": "aDagwdNiDBNDq7LKuFRlvPaO5EOjGw",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/studyshare/backend/studyshare/public/api/register?email=tester@hs-fulda.de&password=securepw&password_confirmation=securepw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/register?email=test.tester@informatik.hs-fulda.de&password=securepw&password_confirmation=securepw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test.tester@informatik.hs-fulda.de"
+						},
+						{
+							"key": "password",
+							"value": "securepw"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "securepw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFileList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/group/files/?logintoken=eYajbJ24etAADYKV8RHjy8CAPY0Uac&groupid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"group",
+						"files",
+						""
+					],
+					"query": [
+						{
+							"key": "logintoken",
+							"value": "eYajbJ24etAADYKV8RHjy8CAPY0Uac"
+						},
+						{
+							"key": "groupid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logintoken",
+							"value": "eYajbJ24etAADYKV8RHjy8CAPY0Uac",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "filename",
+							"value": "TESTFILENAME",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Malfeas/Pictures/71954ff61eda89982f55975039f8c365.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInventoryFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/studyshare/backend/studyshare/public/api/files?logintoken=a7UakIhIJgMNNviJE4JrtaOhRVVSOh&userid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"studyshare",
+						"backend",
+						"studyshare",
+						"public",
+						"api",
+						"files"
+					],
+					"query": [
+						{
+							"key": "logintoken",
+							"value": "a7UakIhIJgMNNviJE4JrtaOhRVVSOh"
+						},
+						{
+							"key": "userid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
